@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { browserHistory } from 'react-router';
+// TODO change to browserHistory if not deployed to gh-pages
+// import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 
 import Routes from './routes';
 
@@ -9,6 +11,6 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 
 ReactDOM.render(
-  <Routes history={browserHistory} />,
+  <Routes history={hashHistory} />,
   document.getElementById('root')
 );

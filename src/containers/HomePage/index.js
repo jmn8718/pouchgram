@@ -95,6 +95,7 @@ export default class HomePage extends Component {
       <div>
         <DocumentsList data={this.state.rows} />
         <AddButton onClick={this.onAddButtonClick} />
+        {/* TODO clear input after success*/}
         <UploadDialog openDialog={this.state.openAddDialog} onClickCancel={this.onClickCancel} onClickUpload={this.onClickUpload}>
           {/* TODO add preview and message*/}
           <input onChange={this.addFile} type="file" />
